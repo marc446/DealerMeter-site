@@ -3,5 +3,5 @@
 // De publishable key mag openbaar zijn: de tabel staat alleen toevoegen toe, geen lezen.
 window.DEALERMETER = {
   supabaseUrl: "", // bijv. "https://abcdefgh.supabase.co"
-  supabaseKey: "", // bijv. "sb_publishable_..."
+  supabaseKey: "sb_publishable_mI3JmlrOg5vvPSnEsOaMKw_Iz3OTFAS",
 };
