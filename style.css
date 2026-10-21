@@ -1033,14 +1033,6 @@ p {
   color: var(--grafiet);
 }
 
-.invullen {
-  padding: 0 4px;
-  border-radius: 4px;
-  background: var(--waarschuwing-zacht);
-  color: var(--waarschuwing);
-  font-weight: 600;
-}
-
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

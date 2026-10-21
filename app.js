@@ -109,7 +109,7 @@
       toonMelding("ok", "Bedankt! We nemen binnen twee werkdagen contact met je op.");
       melding.scrollIntoView({ block: "center", behavior: "smooth" });
     } catch {
-      toonMelding("fout", "Versturen is niet gelukt. Probeer het opnieuw, of mail ons direct.");
+      toonMelding("fout", "Versturen is niet gelukt. Probeer het opnieuw, of mail naar marcfolkertsma9@gmail.com.");
     } finally {
       knop.disabled = false;
       knop.textContent = "Demo aanvragen";
