@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DealerMeter – weet per auto wat je écht verdient</title>
+    <meta
+      name="description"
+      content="DealerMeter vervangt de Excel-verkoopregistratie van je autobedrijf. Verkoop invoeren op je telefoon, winst na BTW en marge direct berekend, week-, maand- en jaardoel altijd in beeld."
+    />
+    <meta name="theme-color" content="#101820" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <meta property="og:title" content="DealerMeter – weet per auto wat je écht verdient" />
+    <meta
+      property="og:description"
+      content="Verkoopregistratie voor autobedrijven: marge- en BTW-auto's goed berekend, doelen altijd in beeld."
+    />
+  </head>
+  <body>
+    <svg width="0" height="0" class="sr-only" aria-hidden="true">
+      <symbol id="logo" viewBox="0 0 32 32">
+        <rect width="32" height="32" rx="8" fill="#101820" />
+        <path d="M7 21a9 9 0 0 1 18 0" fill="none" stroke="#2a3440" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M7 21a9 9 0 0 1 13.5-7.8" fill="none" stroke="#f4c300" stroke-width="3.5" stroke-linecap="round" />
+        <path d="M16 21l4.5-6.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round" />
+        <circle cx="16" cy="21" r="2.2" fill="#fff" />
+      </symbol>
+      <symbol id="vink" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="11" fill="#f4c300" />
+        <path d="M7 12.5l3.2 3L17 9" fill="none" stroke="#101820" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="kruis" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="11" fill="#e1e4e8" />
+        <path d="M8.5 8.5l7 7M15.5 8.5l-7 7" stroke="#5a6470" stroke-width="2.2" stroke-linecap="round" />
+      </symbol>
+    </svg>
+
+    <header class="header">
+      <div class="kolom header__binnen">
+        <a class="merk" href="#top" aria-label="DealerMeter – naar boven">
+          <svg class="merk__icoon" aria-hidden="true"><use href="#logo" /></svg>
+          DealerMeter
+        </a>
+        <nav class="header__nav" aria-label="Hoofdmenu">
+          <a href="#functies">Functies</a>
+          <a href="#rekenen">Rekenvoorbeeld</a>
+          <a href="#praktijk">Praktijk</a>
+          <a href="#vragen">Vragen</a>
+        </nav>
+        <a class="knop knop--primair knop--klein" href="#demo">Plan een demo</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="kolom hero__binnen">
+          <div>
+            <span class="label">VOOR AUTOBEDRIJVEN</span>
+            <h1>Weet per auto wat je <em>écht</em> verdient.</h1>
+            <p class="hero__tekst">
+              DealerMeter vervangt je Excel-verkoopregistratie. Verkoop invoeren op je telefoon, winst na BTW
+              en marge direct berekend, en je week-, maand- en jaardoel altijd in beeld.
+            </p>
+            <div class="hero__knoppen">
+              <a class="knop knop--primair" href="#demo">Plan een demo</a>
+              <a class="knop knop--licht" href="#functies">Bekijk wat het doet</a>
+            </div>
+            <p class="hero__bewijs">Ontwikkeld en dagelijks in gebruik bij <strong>Autohuis Sneek</strong>.</p>
+          </div>
+
+          <div class="telefoon" role="img" aria-label="Weekoverzicht in DealerMeter op een telefoon: bruto winst deze week € 2.610,99, voor op schema, met twee verkopen.">
+            <div class="scherm" aria-hidden="true">
+              <div class="scherm__kop"><svg><use href="#logo" /></svg> DealerMeter</div>
+              <div class="scherm__inhoud">
+                <div class="mock-week"><strong>Week 43</strong><span>19 – 25 okt 2026</span></div>
+                <div class="mock-winst">
+                  <div class="mock-winst__boven">
+                    <span>Bruto winst deze week</span><span class="badge badge--geel">Voor op schema</span>
+                  </div>
+                  <div class="mock-winst__bedrag">€ 2.610,99</div>
+                  <div class="balk">
+                    <div class="balk__vulling" style="width: 38.7%"></div>
+                    <div class="balk__schema" style="left: 28.6%"></div>
+                  </div>
+                  <div class="mock-winst__onder"><span>38,7% van € 6.750,00</span><span>nog € 4.139,01</span></div>
+                </div>
+                <div class="mock-kpis">
+                  <div class="mock-kpi"><span>Verkocht</span><strong>2</strong></div>
+                  <div class="mock-kpi"><span>Omzet</span><strong>€ 13.580</strong></div>
+                  <div class="mock-kpi"><span>Gem. marge</span><strong>19,2%</strong></div>
+                </div>
+                <div class="mock-lijst">
+                  <div class="mock-rij">
+                    <div><strong>Audi A3</strong><span class="kenteken">10-XNZ-9</span> <small>di 20 okt · Marge</small></div>
+                    <div class="mock-rij__rechts"><span class="winst">+ € 1.554,67</span><br /><small>€ 8.580 · 18,1%</small></div>
+                  </div>
+                  <div class="mock-rij">
+                    <div><strong>Volkswagen Golf</strong><span class="kenteken">02-XP-ZF</span> <small>di 20 okt · Marge</small></div>
+                    <div class="mock-rij__rechts"><span class="winst">+ € 1.056,32</span><br /><small>€ 5.000 · 21,1%</small></div>
+                  </div>
+                </div>
+                <div class="mock-knop">+ Nieuwe verkoop</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Probleem -->
+      <section class="sectie">
+        <div class="kolom">
+          <div class="sectie__kop">
+            <span class="boventitel">Herkenbaar?</span>
+            <h2>Het verkoopoverzicht in Excel werkt. Tot het niet meer werkt.</h2>
+            <p>
+              De meeste autobedrijven houden hun verkopen bij in een spreadsheet. Dat begint simpel, maar elke
+              maand een nieuw tabblad, kapotte formules en "wie heeft de laatste versie?" kosten tijd en
+              zekerheid.
+            </p>
+          </div>
+          <div class="vergelijk">
+            <div class="vergelijk__kaart">
+              <h3>Met Excel</h3>
+              <ul class="vinklijst">
+                <li><svg aria-hidden="true"><use href="#kruis" /></svg>Pas aan het eind van de maand weten waar je staat</li>
+                <li><svg aria-hidden="true"><use href="#kruis" /></svg>Marge- en BTW-auto's handmatig goed rekenen</li>
+                <li><svg aria-hidden="true"><use href="#kruis" /></svg>Op kantoor invoeren, niet in de showroom</li>
+                <li><svg aria-hidden="true"><use href="#kruis" /></svg>Garantiepot bijhouden op een apart lijstje</li>
+                <li><svg aria-hidden="true"><use href="#kruis" /></svg>Eén bestand, meerdere versies</li>
+              </ul>
+            </div>
+            <div class="vergelijk__kaart vergelijk__kaart--donker">
+              <h3>Met DealerMeter</h3>
+              <ul class="vinklijst">
+                <li><svg aria-hidden="true"><use href="#vink" /></svg>Elke dag zien of je voor of achter ligt op je weekdoel</li>
+                <li><svg aria-hidden="true"><use href="#vink" /></svg>Winst na BTW en marge automatisch, per regeling</li>
+                <li><svg aria-hidden="true"><use href="#vink" /></svg>Invoeren op je telefoon, direct na de verkoop</li>
+                <li><svg aria-hidden="true"><use href="#vink" /></svg>Garantiepot loopt automatisch mee</li>
+                <li><svg aria-hidden="true"><use href="#vink" /></svg>Iedereen werkt in hetzelfde, actuele overzicht</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Functies -->
+      <section class="sectie sectie--wit" id="functies">
+        <div class="kolom">
+          <div class="sectie__kop">
+            <span class="boventitel">Functies</span>
+            <h2>Alles wat je nu in Excel doet, maar dan sneller en zonder rekenfouten.</h2>
+          </div>
+          <div class="functies">
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="2.5" /><path d="M11 18h2" /></svg>
+              </div>
+              <h3>Invoeren op je telefoon</h3>
+              <p>Grote knoppen en velden voor gebruik in de showroom. Het kenteken komt automatisch in het juiste formaat, en merk en model worden aangevuld uit eerdere verkopen.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2" /><path d="M8 6h8M8 11h2M14 11h2M8 15h2M14 15h2M8 19h8" /></svg>
+              </div>
+              <h3>Marge en BTW goed gerekend</h3>
+              <p>Winst na BTW voor marge- en BTW-auto's, inclusief BPM-teruggave bij export. Tijdens het invoeren zie je de winst al, met een waarschuwing als een verkoop verlies oplevert.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20a9 9 0 0 1 18 0" /><path d="M12 20l4-6" /></svg>
+              </div>
+              <h3>Weekdoel met schema</h3>
+              <p>Stel een week- en maanddoel in. DealerMeter laat zien waar je nu zou moeten staan en of je voor of achter ligt, zodat je bijstuurt vóórdat de week voorbij is.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2" /></svg>
+              </div>
+              <h3>Maand- en jaaroverzicht</h3>
+              <p>Omzet, bruto winst en gemiddelde marge per week, maand en jaar. Met grafieken, je best verkochte modellen, kosten per soort en de verdeling over betaalmethodes.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.5 9.5 8 11 4.5-1.5 8-6 8-11V5l-8-3z" /></svg>
+              </div>
+              <h3>Garantiepot</h3>
+              <p>Het garantiebedrag van elke verkoop gaat automatisch in de pot. Uitkeringen voer je in met het kenteken erbij; het saldo loopt door over de jaren.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14" /></svg>
+              </div>
+              <h3>Excel-export voor de boekhouder</h3>
+              <p>Exporteer een heel jaar naar Excel: alle verkopen met berekende winst, de week- en maandtotalen en de garantiepot-mutaties.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Rekenvoorbeeld -->
+      <section class="sectie" id="rekenen">
+        <div class="kolom reken">
+          <div class="sectie__kop">
+            <span class="boventitel">Rekenvoorbeeld</span>
+            <h2>Geen discussie meer over wat een auto heeft opgeleverd.</h2>
+            <p>
+              DealerMeter rekent elke verkoop op dezelfde manier door: van verkoopprijs naar winst na BTW, minus
+              de kosten die je direct bij de verkoop invoert. Zo zie je meteen wat er onder de streep overblijft.
+            </p>
+            <p class="toelichting">
+              Bij een negatieve marge wordt geen BTW teruggerekend. Een BPM-teruggave bij export telt
+              belastingvrij mee in de winst.
+            </p>
+          </div>
+          <div class="rekenkaart">
+            <div class="rekenkaart__kop">
+              <h3>Volkswagen Golf <span class="kenteken">AB-123-C</span></h3>
+              <span class="badge badge--geel">Marge</span>
+            </div>
+            <table>
+              <tbody>
+                <tr><td>Verkoopprijs</td><td>€ 12.420,00</td></tr>
+                <tr><td>Inkoopprijs</td><td>− € 10.000,00</td></tr>
+                <tr><td>Winst na BTW <span class="toelichting">(marge ÷ 1,21)</span></td><td>€ 2.000,00</td></tr>
+                <tr><td>Kosten (transport, werkplaats, garantie, poetsen)</td><td>− € 550,00</td></tr>
+                <tr class="totaal"><td>Bruto winst</td><td class="winst">+ € 1.450,00</td></tr>
+                <tr><td>Marge</td><td>11,7%</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hoe het werkt -->
+      <section class="sectie sectie--wit">
+        <div class="kolom">
+          <div class="sectie__kop">
+            <span class="boventitel">Zo werkt het</span>
+            <h2>In drie stappen van spreadsheet naar overzicht.</h2>
+          </div>
+          <ol class="stappen">
+            <li class="stap">
+              <h3>Demo en kennismaking</h3>
+              <p>We laten DealerMeter zien en bespreken hoe jullie nu verkopen bijhouden: welke kosten, regelingen en doelen.</p>
+            </li>
+            <li class="stap">
+              <h3>Inrichten</h3>
+              <p>Accounts voor je team, je week- en maanddoel en het beginsaldo van de garantiepot. Alleen uitgenodigde collega's krijgen toegang.</p>
+            </li>
+            <li class="stap">
+              <h3>Verkopen invoeren</h3>
+              <p>Vanaf de eerste verkoop zie je je week, maand en jaar. Exporteer naar Excel wanneer je boekhouder erom vraagt.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Praktijk -->
+      <section class="sectie" id="praktijk">
+        <div class="kolom">
+          <div class="praktijk">
+            <div>
+              <span class="label">PRAKTIJK</span>
+              <h2 style="margin-top: 16px">Gebouwd op de werkvloer bij Autohuis Sneek.</h2>
+              <p>
+                DealerMeter is ontstaan bij Autohuis Sneek, een autobedrijf in Friesland. Daar verving het de
+                Excel-maandregistratie waarmee het team zijn verkopen bijhield. De berekeningen, de doelen en de
+                garantiepot zijn één op één overgenomen uit hun manier van werken.
+              </p>
+            </div>
+            <ul class="praktijk__feiten">
+              <li><strong>Mobiel eerst</strong>Verkopen worden in de showroom en werkplaats ingevoerd, op de telefoon.</li>
+              <li><strong>Eigen rekenregels</strong>Marge, BTW, BPM-teruggave en garantiepot zoals een occasionbedrijf ze gebruikt.</li>
+              <li><strong>Hele team, één overzicht</strong>Iedere collega heeft een eigen account en ziet dezelfde actuele cijfers.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="sectie sectie--wit" id="vragen">
+        <div class="kolom">
+          <div class="sectie__kop">
+            <span class="boventitel">Veelgestelde vragen</span>
+            <h2>Goed om te weten</h2>
+          </div>
+          <div class="faq">
+            <details>
+              <summary>Voor wie is DealerMeter bedoeld?</summary>
+              <p>Voor autobedrijven die occasions verkopen en hun verkopen nu in Excel of op papier bijhouden, en die per auto, per week en per maand willen weten wat ze verdienen.</p>
+            </details>
+            <details>
+              <summary>Moet ik iets installeren?</summary>
+              <p>Nee. DealerMeter werkt in de browser op je telefoon, tablet en computer. Op je telefoon kun je het op je beginscherm zetten, zodat het werkt als een app.</p>
+            </details>
+            <details>
+              <summary>Is mijn data veilig?</summary>
+              <p>Elke gebruiker logt in met een eigen account; er is geen open registratie. De gegevens staan op servers in de EU (Frankfurt) en zijn alleen zichtbaar voor de mensen van je eigen bedrijf.</p>
+            </details>
+            <details>
+              <summary>Met hoeveel mensen kan ik het gebruiken?</summary>
+              <p>Met je hele verkoopteam. Iedere collega krijgt een eigen account en ziet dezelfde cijfers.</p>
+            </details>
+            <details>
+              <summary>Kan ik mijn huidige Excel-gegevens meenemen?</summary>
+              <p>Dat bespreken we graag tijdens de demo. We kijken dan samen naar hoe je huidige bestand is opgebouwd.</p>
+            </details>
+            <details>
+              <summary>Wat kost DealerMeter?</summary>
+              <p>De prijs is nog niet vastgesteld. We zijn op zoek naar autobedrijven die willen meedenken; tijdens de demo hoor je wat het voor jouw bedrijf zou kosten.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Demo -->
+      <section class="sectie" id="demo">
+        <div class="kolom demo">
+          <div class="demo__intro">
+            <span class="boventitel">Demo aanvragen</span>
+            <h2>Zien hoe het werkt met jouw verkopen?</h2>
+            <p>Laat je gegevens achter en we nemen binnen twee werkdagen contact op voor een demo van ongeveer een halfuur.</p>
+            <ul class="vinklijst">
+              <li><svg aria-hidden="true"><use href="#vink" /></svg>Vrijblijvend, geen verplichtingen</li>
+              <li><svg aria-hidden="true"><use href="#vink" /></svg>Op locatie of via een videogesprek</li>
+              <li><svg aria-hidden="true"><use href="#vink" /></svg>We kijken mee naar je huidige werkwijze</li>
+            </ul>
+          </div>
+
+          <form class="formulier" id="demo-formulier" novalidate>
+            <div id="formulier-melding" aria-live="polite"></div>
+
+            <div class="twee">
+              <div class="veld">
+                <label for="naam">Naam</label>
+                <input id="naam" name="naam" autocomplete="name" required maxlength="100" />
+              </div>
+              <div class="veld">
+                <label for="bedrijf">Bedrijfsnaam</label>
+                <input id="bedrijf" name="bedrijf" autocomplete="organization" required maxlength="150" />
+              </div>
+            </div>
+
+            <div class="twee">
+              <div class="veld">
+                <label for="email">E-mailadres</label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="200" />
+              </div>
+              <div class="veld">
+                <label for="telefoon">Telefoon <span class="optioneel">(optioneel)</span></label>
+                <input id="telefoon" name="telefoon" type="tel" autocomplete="tel" inputmode="tel" maxlength="30" />
+              </div>
+            </div>
+
+            <div class="twee">
+              <div class="veld">
+                <label for="aantal">Verkochte auto's per maand</label>
+                <select id="aantal" name="aantal" required>
+                  <option value="">Kies…</option>
+                  <option>Minder dan 10</option>
+                  <option>10 – 25</option>
+                  <option>25 – 50</option>
+                  <option>Meer dan 50</option>
+                </select>
+              </div>
+              <div class="veld">
+                <label for="werkwijze">Hoe houd je verkopen nu bij?</label>
+                <select id="werkwijze" name="werkwijze" required>
+                  <option value="">Kies…</option>
+                  <option>Excel of Google Sheets</option>
+                  <option>Op papier</option>
+                  <option>In ons dealer- of boekhoudpakket</option>
+                  <option>Anders</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="veld">
+              <label for="opmerking">Opmerking <span class="optioneel">(optioneel)</span></label>
+              <textarea id="opmerking" name="opmerking" maxlength="1000" placeholder="Bijvoorbeeld wat je nu mist in je huidige overzicht"></textarea>
+            </div>
+
+            <div class="honing" aria-hidden="true">
+              <label for="website">Website</label>
+              <input id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <label class="akkoord">
+              <input type="checkbox" name="akkoord" id="akkoord" required />
+              <span>Ik ga akkoord dat DealerMeter mijn gegevens gebruikt om contact op te nemen over een demo. Zie de <a href="privacy.html">privacyverklaring</a>.</span>
+            </label>
+
+            <button class="knop knop--primair" type="submit" id="verstuur">Demo aanvragen</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="kolom footer__binnen">
+        <a class="merk" href="#top">
+          <svg class="merk__icoon" aria-hidden="true"><use href="#logo" /></svg>
+          DealerMeter
+        </a>
+        <nav aria-label="Voettekst">
+          <a href="#demo">Demo aanvragen</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+        <p>Ontwikkeld met Autohuis Sneek.</p>
+      </div>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
