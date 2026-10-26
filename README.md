@@ -8,7 +8,7 @@ Gewone HTML, CSS en JavaScript, zonder build; geschikt voor GitHub Pages.
 | `index.html` | De pagina |
 | `handleiding.html` | Handleiding van de app voor gebruikers en beheerders |
 | `privacy.html` | Privacyverklaring (adres en KvK-nummer toevoegen zodra bekend) |
-| `style.css` | Huisstijl; alle kleuren als variabelen bovenaan |
+| `style.css` | Huisstijl; alle kleuren als variabelen bovenaan. Na een wijziging het versienummer in `style.css?v=…` in alle `.html`-bestanden ophogen, anders tonen browsers de oude opmaak |
 | `app.js` | Demo-formulier: controle en opslaan in Supabase |
 | `config.js` | Supabase-URL en publishable key voor het formulier |
 | `fonts/` | Inter en JetBrains Mono, op de site zelf (geen Google Fonts). Licentie: SIL OFL |
