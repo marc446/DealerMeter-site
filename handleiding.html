@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Handleiding – DealerMeter</title>
+    <meta
+      name="description"
+      content="Zo gebruik je DealerMeter: inloggen, verkopen invoeren, week-, maand- en jaaroverzicht, garantiepot, doelen en collega's beheren."
+    />
+    <meta name="theme-color" content="#101820" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="kolom header__binnen">
+        <a class="merk" href="index.html">
+          <img class="merk__icoon" src="favicon.svg" alt="" width="32" height="32" />
+          DealerMeter
+        </a>
+        <div class="header__acties">
+          <a class="knop knop--rand knop--klein" href="https://dealermeter-app.netlify.app/login">Inloggen</a>
+          <a class="knop knop--primair knop--klein header__demo" href="index.html#demo"><span class="alleen-breed">Plan een demo</span><span class="alleen-smal">Demo</span></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="tekstpagina handleiding">
+      <h1>Handleiding</h1>
+      <p class="intro">
+        Alles wat je nodig hebt om met DealerMeter te werken: van inloggen tot je eerste verkoop, de overzichten
+        en het beheer voor eigenaars en beheerders.
+      </p>
+
+      <nav class="inhoud" aria-label="Inhoud">
+        <h2>Inhoud</h2>
+        <ol>
+          <li><a href="#aan-de-slag">Aan de slag</a></li>
+          <li><a href="#verkopen">Verkopen invoeren en wijzigen</a></li>
+          <li><a href="#berekening">Hoe de winst wordt berekend</a></li>
+          <li><a href="#overzichten">Week, maand en jaar</a></li>
+          <li><a href="#garantiepot">Garantiepot</a></li>
+          <li><a href="#beheer">Doelen en collega's beheren</a></li>
+          <li><a href="#rollen">Wie mag wat</a></li>
+          <li><a href="#problemen">Lukt iets niet?</a></li>
+        </ol>
+      </nav>
+
+      <!-- 1 -->
+      <section id="aan-de-slag">
+        <h2>1. Aan de slag</h2>
+
+        <h3>Inloggen</h3>
+        <ol class="stappenlijst">
+          <li>
+            Ga naar <a href="https://dealermeter-app.netlify.app/login">dealermeter-app.netlify.app</a>, of tik op
+            <strong>Inloggen</strong> rechtsboven op deze website.
+          </li>
+          <li>Vul je e-mailadres en wachtwoord in. Die krijg je van de eigenaar of beheerder van je bedrijf.</li>
+          <li>
+            Je komt meteen in het weekoverzicht van je bedrijf. Het adres eindigt op de naam van je bedrijf, bijvoorbeeld
+            <code>/autohuis-sneek</code>. Hoor je bij meer dan één bedrijf, dan kies je eerst het bedrijf.
+          </li>
+        </ol>
+        <p class="tip">
+          <strong>Tip:</strong> heb je een tijdelijk wachtwoord gekregen? Kies meteen een eigen wachtwoord via
+          <strong>Meer → Wachtwoord wijzigen</strong>.
+        </p>
+
+        <h3>DealerMeter op je beginscherm zetten</h3>
+        <p>Dan open je DealerMeter met één tik, net als een app. Installeren is niet nodig.</p>
+        <ul>
+          <li>
+            <strong>iPhone (Safari):</strong> open DealerMeter, tik op de deelknop (vierkantje met pijl omhoog) en kies
+            <strong>Zet op beginscherm</strong>.
+          </li>
+          <li>
+            <strong>Android (Chrome):</strong> open DealerMeter, tik op de drie puntjes rechtsboven en kies
+            <strong>Toevoegen aan startscherm</strong> of <strong>App installeren</strong>.
+          </li>
+        </ul>
+
+        <h3>Het menu</h3>
+        <p>Op je telefoon staat het menu onderin, op de computer bovenin.</p>
+        <table>
+          <tbody>
+            <tr><th scope="row">Week</th><td>Bruto winst, doel en verkopen van deze week. Hier begin je.</td></tr>
+            <tr><th scope="row">Maand</th><td>De maand in één oogopslag, met een regel per week.</td></tr>
+            <tr><th scope="row">Jaar</th><td>Jaartotalen, grafieken, top modellen en de Excel-export.</td></tr>
+            <tr><th scope="row">Pot</th><td>Het saldo van de garantiepot met alle stortingen en uitkeringen.</td></tr>
+            <tr><th scope="row">Meer</th><td>Wachtwoord wijzigen, uitloggen en (voor beheerders) Instellingen en Gebruikers.</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- 2 -->
+      <section id="verkopen">
+        <h2>2. Verkopen invoeren en wijzigen</h2>
+
+        <h3>Een nieuwe verkoop invoeren</h3>
+        <ol class="stappenlijst">
+          <li>Tik op de gele knop <strong>+ Nieuwe verkoop</strong>.</li>
+          <li>
+            <strong>Auto:</strong> de datum staat al op vandaag. Vul merk en model in (eerder gebruikte namen worden
+            voorgesteld), het kenteken (streepjes komen er vanzelf in), het bouwjaar en het aantal dagen dat de auto
+            op voorraad stond.
+          </li>
+          <li>
+            <strong>Verkoop:</strong> kies <strong>Marge</strong> of <strong>BTW</strong>. Kies eventueel hoe er is
+            betaald; meerdere betaalmethodes tegelijk mag, bijvoorbeeld contant plus inruil. Vul de inkoopprijs en
+            verkoopprijs in. Bij een export-auto vul je ook de BPM-teruggave in.
+          </li>
+          <li>
+            <strong>Kosten:</strong> transport, werkplaats, Autotrust, Res. Garantie, poetsen en promotie. Alle
+            kostenvelden zijn optioneel; een leeg veld telt als € 0.
+          </li>
+          <li>
+            Onderaan zie je onder <strong>Berekening</strong> direct de winst na BTW, de kosten, de bruto winst en
+            de marge. Levert de verkoop verlies op, dan wordt dat rood gemeld.
+          </li>
+          <li>Tik op <strong>Verkoop opslaan</strong>. Je gaat terug naar de week van die verkoop.</li>
+        </ol>
+        <p class="tip">
+          <strong>Let op:</strong> vul bij een BTW-auto de inkoopprijs <em>inclusief</em> BTW in, net als de
+          verkoopprijs. DealerMeter rekent de BTW daarna over de winst.
+        </p>
+
+        <h3>Een verkoop wijzigen of verwijderen</h3>
+        <ol class="stappenlijst">
+          <li>Tik in een overzicht op de verkoop.</li>
+          <li>Pas aan wat nodig is en tik op <strong>Wijzigingen opslaan</strong>.</li>
+          <li>
+            Verwijderen doe je onderaan met <strong>Verwijderen</strong>. Je krijgt eerst nog een vraag ter
+            bevestiging; een verwijderde verkoop is niet terug te halen.
+          </li>
+        </ol>
+      </section>
+
+      <!-- 3 -->
+      <section id="berekening">
+        <h2>3. Hoe de winst wordt berekend</h2>
+        <p>Elke verkoop wordt op dezelfde manier doorgerekend, voor marge- én BTW-auto's:</p>
+        <table>
+          <tbody>
+            <tr><th scope="row">Winst na BTW</th><td>(verkoopprijs − inkoopprijs) ÷ 1,21. Bij verlies wordt geen BTW teruggerekend: dan is het gewoon verkoopprijs − inkoopprijs.</td></tr>
+            <tr><th scope="row">Bruto winst</th><td>winst na BTW + BPM-teruggave − alle kosten. De BPM-teruggave telt belastingvrij mee.</td></tr>
+            <tr><th scope="row">Marge %</th><td>bruto winst ÷ verkoopprijs.</td></tr>
+          </tbody>
+        </table>
+        <p>
+          <strong>Voorbeeld:</strong> een marge-auto ingekocht voor € 10.000 en verkocht voor € 12.420. Winst na BTW
+          is € 2.420 ÷ 1,21 = € 2.000. Met € 550 aan kosten blijft er € 1.450 bruto winst over, een marge van 11,7%.
+        </p>
+        <p>
+          In de overzichten is <strong>Gem. marge</strong> de totale bruto winst gedeeld door de totale omzet, en
+          <strong>Winst per auto</strong> de totale bruto winst gedeeld door het aantal verkochte auto's.
+        </p>
+      </section>
+
+      <!-- 4 -->
+      <section id="overzichten">
+        <h2>4. Week, maand en jaar</h2>
+
+        <h3>Weekoverzicht</h3>
+        <p>
+          De donkere kaart bovenaan toont de bruto winst van de week en hoe ver je bent richting je weekdoel. Het
+          witte streepje in de gele balk staat waar je volgens schema nu zou moeten zijn. Het label rechtsboven zegt
+          hoe je ervoor staat:
+        </p>
+        <ul>
+          <li><strong>Voor op schema</strong> of <strong>Achter op schema</strong>: de week loopt nog.</li>
+          <li><strong>Doel gehaald</strong> of <strong>Doel niet gehaald</strong>: de week is voorbij (of het doel is al binnen).</li>
+        </ul>
+        <p>
+          Daaronder staan het aantal verkochte auto's, de omzet, de winst per auto en de gemiddelde marge, en de
+          verkopen van die week. Met de pijltjes ga je naar de vorige of volgende week; met
+          <strong>Naar deze week</strong> kom je terug. Een week loopt van maandag tot en met zondag.
+        </p>
+
+        <h3>Maandoverzicht</h3>
+        <p>
+          Dezelfde kaart en kengetallen voor de maand, met een tabel per week. Daarin zie je per week of het weekdoel
+          is gehaald. Een week die over de maandgrens loopt, telt alleen mee met de dagen in deze maand en wordt niet
+          met het weekdoel vergeleken. Onderaan kun je alle verkopen van de maand openklappen.
+        </p>
+
+        <h3>Jaaroverzicht en Excel-export</h3>
+        <p>
+          Het jaaroverzicht toont de jaartotalen en het saldo van de garantiepot, hoeveel week- en maanddoelen er zijn
+          gehaald, grafieken van de bruto winst per week en cumulatief, de top modellen, de kosten per soort en de
+          verdeling over BTW/marge en betaalmethodes.
+        </p>
+        <p>
+          Met <strong>Exporteer … naar Excel</strong> download je het hele jaar: een tabblad met alle verkopen inclusief
+          berekende winst, een tabblad met maand- en weektotalen en een tabblad met de garantiepot. Handig voor je
+          boekhouder.
+        </p>
+      </section>
+
+      <!-- 5 -->
+      <section id="garantiepot">
+        <h2>5. Garantiepot</h2>
+        <p>
+          Het bedrag dat je bij een verkoop invult bij <strong>Res. Garantie</strong>, gaat automatisch als storting
+          in de garantiepot. Onder <strong>Pot</strong> zie je het saldo van vandaag en alle stortingen en
+          uitkeringen per jaar. Tik op een storting om de bijbehorende verkoop te openen.
+        </p>
+
+        <h3>Een uitkering invoeren <span class="rol-label">Beheerder</span></h3>
+        <ol class="stappenlijst">
+          <li>Ga naar <strong>Pot</strong> en tik op <strong>+ Uitkering invoeren</strong>.</li>
+          <li>Vul de datum, het bedrag en een omschrijving in, en eventueel het kenteken van de auto. Je ziet meteen wat het saldo daarna wordt.</li>
+          <li>Tik op <strong>Uitkering opslaan</strong>. Een uitkering wijzigen of verwijderen doe je door erop te tikken.</li>
+        </ol>
+
+        <h3>Beginsaldo aanpassen <span class="rol-label">Beheerder</span></h3>
+        <p>
+          Wil je de pot gelijkzetten met het werkelijke bedrag? Ga naar <strong>Meer → Instellingen</strong> en vul
+          bij Garantiepot het werkelijke bedrag in als <strong>beginsaldo</strong>. Kies als
+          <strong>startdatum</strong> de eerste dag die nog níet in dat bedrag zit (meestal morgen). Stortingen en
+          uitkeringen vanaf die dag tellen mee.
+        </p>
+      </section>
+
+      <!-- 6 -->
+      <section id="beheer">
+        <h2>6. Doelen en collega's beheren <span class="rol-label">Beheerder</span></h2>
+        <p>Dit deel is voor eigenaars en beheerders. Medewerkers zien deze schermen niet.</p>
+
+        <h3>Week- en maanddoel instellen</h3>
+        <ol class="stappenlijst">
+          <li>Ga naar <strong>Meer → Instellingen</strong>.</li>
+          <li>Vul bij Weekdoel of Maanddoel het nieuwe bedrag in en kies vanaf welke week of maand het geldt.</li>
+          <li>Tik op <strong>Weekdoel opslaan</strong> of <strong>Maanddoel opslaan</strong>.</li>
+        </ol>
+        <p>
+          Een nieuw doel geldt vanaf de gekozen periode. Eerdere weken en maanden blijven gemeten tegen het doel dat
+          toen gold, dus je oude resultaten veranderen niet. Onder <strong>Geschiedenis</strong> zie je eerdere doelen
+          en kun je een doel verwijderen.
+        </p>
+
+        <h3>Een collega toevoegen</h3>
+        <ol class="stappenlijst">
+          <li>Ga naar <strong>Meer → Gebruikers</strong>.</li>
+          <li>Vul onder <strong>Collega toevoegen</strong> het e-mailadres in, een tijdelijk wachtwoord (minimaal 8 tekens) en de rol.</li>
+          <li>Tik op <strong>Toevoegen</strong> en geef het wachtwoord zelf door aan je collega, bijvoorbeeld via WhatsApp of mondeling.</li>
+          <li>Je collega logt in en kiest een eigen wachtwoord via <strong>Meer → Wachtwoord wijzigen</strong>.</li>
+        </ol>
+
+        <h3>Rol wijzigen, nieuw wachtwoord of verwijderen</h3>
+        <p>
+          Tik in <strong>Meer → Gebruikers</strong> bij een collega op <strong>Wijzigen</strong>. Daar kun je de rol
+          aanpassen, een nieuw wachtwoord instellen als iemand het kwijt is, of de collega verwijderen. Een verwijderde
+          collega kan niet meer inloggen; de verkopen die hij of zij heeft ingevoerd blijven gewoon bewaard.
+        </p>
+        <p class="tip">
+          Je eigen account kun je hier niet wijzigen, zodat je jezelf nooit per ongeluk buitensluit. Er blijft altijd
+          minstens één eigenaar.
+        </p>
+      </section>
+
+      <!-- 7 -->
+      <section id="rollen">
+        <h2>7. Wie mag wat</h2>
+        <div class="tabel-scroll">
+          <table class="rollen">
+            <thead>
+              <tr><th scope="col"></th><th scope="col">Medewerker</th><th scope="col">Beheerder</th><th scope="col">Eigenaar</th></tr>
+            </thead>
+            <tbody>
+              <tr><th scope="row">Verkopen invoeren, wijzigen en verwijderen</th><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Week, maand, jaar en garantiepot bekijken</th><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Excel-export</th><td>✓</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Uitkeringen garantiepot en beginsaldo</th><td>–</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Week- en maanddoel instellen</th><td>–</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Collega's toevoegen, rollen wijzigen, verwijderen</th><td>–</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Eigenaars toevoegen of verwijderen</th><td>–</td><td>–</td><td>✓</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 8 -->
+      <section id="problemen">
+        <h2>8. Lukt iets niet?</h2>
+        <dl class="vragen">
+          <dt>Ik kan niet inloggen</dt>
+          <dd>
+            Controleer je e-mailadres en wachtwoord. Wachtwoord kwijt? Vraag de beheerder van je bedrijf om een nieuw
+            wachtwoord in te stellen via Meer → Gebruikers. Na te veel pogingen achter elkaar moet je een paar minuten
+            wachten.
+          </dd>
+          <dt>Ik zie "Pagina niet gevonden"</dt>
+          <dd>
+            De pagina bestaat niet, of je rol geeft geen toegang (Instellingen en Gebruikers zijn alleen voor
+            beheerders). Tik op <strong>Naar het overzicht</strong> om terug te gaan.
+          </dd>
+          <dt>Ik zie Instellingen of Gebruikers niet onder Meer</dt>
+          <dd>Je bent medewerker. Vraag de eigenaar of een beheerder als je meer rechten nodig hebt.</dd>
+          <dt>Een verkoop staat in de verkeerde week</dt>
+          <dd>Een verkoop telt mee in de week en maand van de datum die je invult. Open de verkoop en pas de datum aan.</dd>
+          <dt>Iets anders?</dt>
+          <dd>Mail naar <a href="mailto:marcfolkertsma9@gmail.com">marcfolkertsma9@gmail.com</a>.</dd>
+        </dl>
+      </section>
+
+      <p class="terug"><a href="index.html">← Terug naar DealerMeter</a></p>
+    </main>
+
+    <footer class="footer">
+      <div class="kolom footer__binnen">
+        <a class="merk" href="index.html">
+          <img class="merk__icoon" src="favicon.svg" alt="" width="32" height="32" />
+          DealerMeter
+        </a>
+        <nav aria-label="Voettekst">
+          <a href="https://dealermeter-app.netlify.app/login">Inloggen</a>
+          <a href="index.html#demo">Demo aanvragen</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -6,9 +6,7 @@
     <title>Privacyverklaring – DealerMeter</title>
     <meta name="theme-color" content="#101820" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -18,13 +16,16 @@
           <img class="merk__icoon" src="favicon.svg" alt="" width="32" height="32" />
           DealerMeter
         </a>
-        <a class="knop knop--primair knop--klein" href="index.html#demo">Plan een demo</a>
+        <div class="header__acties">
+          <a class="knop knop--rand knop--klein" href="https://dealermeter-app.netlify.app/login">Inloggen</a>
+          <a class="knop knop--primair knop--klein header__demo" href="index.html#demo"><span class="alleen-breed">Plan een demo</span><span class="alleen-smal">Demo</span></a>
+        </div>
       </div>
     </header>
 
     <main class="tekstpagina">
       <h1>Privacyverklaring</h1>
-      <p class="grafiet">Laatst bijgewerkt: 21 oktober 2026</p>
+      <p class="grafiet">Laatst bijgewerkt: 26 oktober 2026</p>
 
       <h2>Wie zijn wij</h2>
       <p>
@@ -51,8 +52,9 @@
       <h2>Waar je gegevens staan</h2>
       <p>
         De aanvragen worden opgeslagen bij Supabase, op servers in de Europese Unie (Frankfurt). De website zelf
-        wordt gehost door GitHub Pages en laadt lettertypes van Google Fonts; daarbij wordt je IP-adres aan die
-        diensten doorgegeven. We gebruiken geen cookies en geen trackers.
+        wordt gehost door GitHub Pages; zoals bij elke website ziet die dienst daarbij je IP-adres. De
+        lettertypes staan op de website zelf, dus er gaat niets naar Google. We gebruiken geen cookies en geen
+        trackers.
       </p>
 
       <h2>Hoe lang we ze bewaren</h2>

@@ -10,12 +10,7 @@
     />
     <meta name="theme-color" content="#101820" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preload" href="fonts/inter.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="style.css" />
     <meta property="og:title" content="DealerMeter – weet per auto wat je écht verdient" />
     <meta
@@ -53,8 +48,12 @@
           <a href="#rekenen">Rekenvoorbeeld</a>
           <a href="#praktijk">Praktijk</a>
           <a href="#vragen">Vragen</a>
+          <a href="handleiding.html">Handleiding</a>
         </nav>
-        <a class="knop knop--primair knop--klein" href="#demo">Plan een demo</a>
+        <div class="header__acties">
+          <a class="knop knop--rand knop--klein" href="https://dealermeter-app.netlify.app/login">Inloggen</a>
+          <a class="knop knop--primair knop--klein header__demo" href="#demo"><span class="alleen-breed">Plan een demo</span><span class="alleen-smal">Demo</span></a>
+        </div>
       </div>
     </header>
 
@@ -78,7 +77,7 @@
 
           <div class="telefoon" role="img" aria-label="Weekoverzicht in DealerMeter op een telefoon: bruto winst deze week € 2.610,99, voor op schema, met twee verkopen.">
             <div class="scherm" aria-hidden="true">
-              <div class="scherm__kop"><svg><use href="#logo" /></svg> DealerMeter</div>
+              <div class="scherm__kop"><svg><use href="#logo" /></svg><span>Autohuis Sneek<small>DealerMeter</small></span></div>
               <div class="scherm__inhoud">
                 <div class="mock-week"><strong>Week 43</strong><span>19 – 25 okt 2026</span></div>
                 <div class="mock-winst">
@@ -95,6 +94,7 @@
                 <div class="mock-kpis">
                   <div class="mock-kpi"><span>Verkocht</span><strong>2</strong></div>
                   <div class="mock-kpi"><span>Omzet</span><strong>€ 13.580</strong></div>
+                  <div class="mock-kpi"><span>Winst per auto</span><strong>€ 1.306</strong></div>
                   <div class="mock-kpi"><span>Gem. marge</span><strong>19,2%</strong></div>
                 </div>
                 <div class="mock-lijst">
@@ -185,7 +185,7 @@
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-8M22 20H2" /></svg>
               </div>
               <h3>Maand- en jaaroverzicht</h3>
-              <p>Omzet, bruto winst en gemiddelde marge per week, maand en jaar. Met grafieken, je best verkochte modellen, kosten per soort en de verdeling over betaalmethodes.</p>
+              <p>Omzet, bruto winst, winst per auto en gemiddelde marge per week, maand en jaar. Met grafieken, je best verkochte modellen, kosten per soort en de verdeling over betaalmethodes.</p>
             </article>
             <article class="functie">
               <div class="functie__icoon">
@@ -200,6 +200,27 @@
               </div>
               <h3>Excel-export voor de boekhouder</h3>
               <p>Exporteer een heel jaar naar Excel: alle verkopen met berekende winst, de week- en maandtotalen en de garantiepot-mutaties.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5" /><path d="M2.5 20a6.5 6.5 0 0 1 13 0" /><path d="M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6" /></svg>
+              </div>
+              <h3>Je hele team, met rollen</h3>
+              <p>Iedere collega een eigen account. Medewerkers voeren verkopen in; beheerders stellen ook doelen en de garantiepot in, en voegen zelf collega's toe of halen ze weg.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2" /><path d="M8 10V7a4 4 0 0 1 8 0v3" /></svg>
+              </div>
+              <h3>Eigen, afgeschermde omgeving</h3>
+              <p>Je bedrijf krijgt een eigen adres in DealerMeter. De database zorgt dat alleen jouw collega's jullie cijfers zien; andere bedrijven kunnen er niet bij.</p>
+            </article>
+            <article class="functie">
+              <div class="functie__icoon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1.5" /><rect x="14" y="3" width="7" height="7" rx="1.5" /><rect x="3" y="14" width="7" height="7" rx="1.5" /><path d="M17.5 14v7M14 17.5h7" /></svg>
+              </div>
+              <h3>Werkt als een app</h3>
+              <p>Niets te installeren: zet DealerMeter op het beginscherm van je telefoon en open het met één tik. Op de computer werkt het gewoon in de browser.</p>
             </article>
           </div>
         </div>
@@ -253,11 +274,11 @@
             </li>
             <li class="stap">
               <h3>Inrichten</h3>
-              <p>Accounts voor je team, je week- en maanddoel en het beginsaldo van de garantiepot. Alleen uitgenodigde collega's krijgen toegang.</p>
+              <p>Je bedrijf krijgt een eigen adres en de eigenaar een account. Daarna voeg je zelf collega's toe en stel je je week- en maanddoel en de garantiepot in. Alleen wie je toevoegt, krijgt toegang.</p>
             </li>
             <li class="stap">
               <h3>Verkopen invoeren</h3>
-              <p>Vanaf de eerste verkoop zie je je week, maand en jaar. Exporteer naar Excel wanneer je boekhouder erom vraagt.</p>
+              <p>Vanaf de eerste verkoop zie je je week, maand en jaar. Exporteer naar Excel wanneer je boekhouder erom vraagt. In de <a href="handleiding.html">handleiding</a> staat alles stap voor stap.</p>
             </li>
           </ol>
         </div>
@@ -279,7 +300,7 @@
             <ul class="praktijk__feiten">
               <li><strong>Mobiel eerst</strong>Verkopen worden in de showroom en werkplaats ingevoerd, op de telefoon.</li>
               <li><strong>Eigen rekenregels</strong>Marge, BTW, BPM-teruggave en garantiepot zoals een occasionbedrijf ze gebruikt.</li>
-              <li><strong>Hele team, één overzicht</strong>Iedere collega heeft een eigen account en ziet dezelfde actuele cijfers.</li>
+              <li><strong>Hele team, één overzicht</strong>Iedere collega heeft een eigen account met een eigen rol en ziet dezelfde actuele cijfers.</li>
             </ul>
           </div>
         </div>
@@ -303,11 +324,15 @@
             </details>
             <details>
               <summary>Is mijn data veilig?</summary>
-              <p>Elke gebruiker logt in met een eigen account; er is geen open registratie. De gegevens staan op servers in de EU (Frankfurt) en zijn alleen zichtbaar voor de mensen van je eigen bedrijf.</p>
+              <p>Elke gebruiker logt in met een eigen account; er is geen open registratie. De gegevens staan op servers in de EU (Frankfurt). De database zelf schermt elk bedrijf af, zodat alleen de mensen van je eigen bedrijf jullie cijfers zien.</p>
             </details>
             <details>
               <summary>Met hoeveel mensen kan ik het gebruiken?</summary>
-              <p>Met je hele verkoopteam. Iedere collega krijgt een eigen account en ziet dezelfde cijfers.</p>
+              <p>Met je hele team, zonder limiet. Iedere collega krijgt een eigen account als medewerker, beheerder of eigenaar. Een beheerder voegt zelf collega's toe, wijzigt rollen en zet een nieuw wachtwoord als iemand het kwijt is.</p>
+            </details>
+            <details>
+              <summary>Is er uitleg voor mijn collega's?</summary>
+              <p>Ja. In de <a href="handleiding.html">handleiding</a> staat stap voor stap hoe je inlogt, een verkoop invoert, de overzichten leest en (als beheerder) doelen en collega's beheert.</p>
             </details>
             <details>
               <summary>Kan ik mijn huidige Excel-gegevens meenemen?</summary>
@@ -412,6 +437,8 @@
         </a>
         <nav aria-label="Voettekst">
           <a href="#demo">Demo aanvragen</a>
+          <a href="https://dealermeter-app.netlify.app/login">Inloggen</a>
+          <a href="handleiding.html">Handleiding</a>
           <a href="privacy.html">Privacy</a>
           <a href="mailto:marcfolkertsma9@gmail.com">marcfolkertsma9@gmail.com</a>
         </nav>

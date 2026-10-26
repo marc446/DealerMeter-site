@@ -1,6 +1,23 @@
 /*
  * DealerMeter – huisstijl. Alle kleuren als tokens; dezelfde waarden als in de app.
  */
+
+/* Lettertypes staan op de site zelf (geen verbinding met Google). Licentie: SIL OFL, zie fonts/. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("fonts/inter.woff2") format("woff2-variations"), url("fonts/inter.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url("fonts/jetbrains-mono-700.woff2") format("woff2");
+}
 :root {
   --inkt: #101820;
   --inkt-zacht: #2a3440;
@@ -136,6 +153,16 @@ p {
   font-size: 15px;
 }
 
+/* Omlijnd, voor op een lichte achtergrond (Inloggen) */
+.knop--rand {
+  background: var(--kaart);
+  color: var(--inkt);
+  border-color: var(--rand);
+}
+.knop--rand:hover {
+  border-color: var(--inkt);
+}
+
 /* ---------- Header ---------- */
 
 .header {
@@ -189,9 +216,42 @@ p {
   color: var(--inkt);
 }
 
-@media (min-width: 860px) {
+/* Menu pas tonen als het naast merk en knoppen past. */
+@media (min-width: 1080px) {
   .header__nav {
     display: flex;
+  }
+}
+
+.header__acties {
+  display: flex;
+  gap: 8px;
+}
+
+.alleen-smal {
+  display: none;
+}
+
+/* Telefoon: merk, Inloggen en een korte demoknop passen naast elkaar. */
+@media (max-width: 479px) {
+  .header .merk {
+    font-size: 18px;
+  }
+  .header .knop--klein {
+    padding: 0 14px;
+  }
+  .alleen-breed {
+    display: none;
+  }
+  .alleen-smal {
+    display: inline;
+  }
+}
+
+/* Heel smal: alleen Inloggen; de demoknop staat ook bovenaan de pagina. */
+@media (max-width: 369px) {
+  .header__demo {
+    display: none;
   }
 }
 
@@ -299,8 +359,19 @@ p {
 }
 
 .scherm__kop svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
+}
+
+.scherm__kop span {
+  line-height: 1.15;
+}
+
+.scherm__kop small {
+  display: block;
+  font-size: 9px;
+  font-weight: 500;
+  color: var(--grafiet);
 }
 
 .scherm__inhoud {
@@ -398,7 +469,7 @@ p {
 
 .mock-kpis {
   display: grid;
-  grid-template-columns: 0.85fr 1.25fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 6px;
 }
 
@@ -1036,5 +1107,195 @@ p {
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+/* Handleiding */
+.handleiding .intro {
+  margin-top: 12px;
+  font-size: 19px;
+  color: var(--grafiet);
+}
+
+.handleiding section {
+  margin-top: 48px;
+  padding-top: 8px;
+}
+
+.handleiding section > h2 {
+  margin-top: 0;
+  font-size: 26px;
+}
+
+.handleiding h3 {
+  margin-top: 28px;
+  font-size: 19px;
+}
+
+.handleiding code {
+  font-family: var(--mono);
+  font-size: 0.85em;
+  padding: 1px 6px;
+  border-radius: 5px;
+  background: var(--rand);
+}
+
+.inhoud {
+  margin-top: 28px;
+  padding: 20px 24px;
+  border: 1px solid var(--rand);
+  border-radius: var(--radius);
+  background: var(--kaart);
+}
+
+.inhoud h2 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--grafiet);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.inhoud ol {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.inhoud li {
+  margin-top: 2px;
+}
+
+.inhoud a {
+  display: inline-block;
+  padding: 6px 0;
+  font-weight: 600;
+}
+
+/* Genummerde stappen met gele cijferbolletjes */
+.stappenlijst {
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: stap;
+}
+
+.tekstpagina .stappenlijst li {
+  position: relative;
+  margin-top: 12px;
+  padding-left: 40px;
+  counter-increment: stap;
+}
+
+.stappenlijst li::before {
+  content: counter(stap);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  background: var(--geel);
+  color: var(--inkt);
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.tekstpagina .tip {
+  margin-top: 16px;
+  padding: 14px 16px;
+  border-left: 4px solid var(--geel);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--kaart);
+}
+
+.rol-label {
+  display: inline-block;
+  margin-left: 6px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  background: var(--inkt);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0;
+  vertical-align: middle;
+}
+
+.handleiding table {
+  width: 100%;
+  margin-top: 14px;
+  border-collapse: collapse;
+  border: 1px solid var(--rand);
+  border-radius: var(--radius);
+  background: var(--kaart);
+  font-size: 16px;
+}
+
+.handleiding th,
+.handleiding td {
+  padding: 10px 14px;
+  border-top: 1px solid var(--rand);
+  text-align: left;
+  vertical-align: top;
+}
+
+.handleiding tbody th {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.tabel-scroll {
+  overflow-x: auto;
+}
+
+.handleiding .rollen th[scope="row"] {
+  white-space: normal;
+  font-weight: 500;
+}
+
+.handleiding .rollen td,
+.handleiding .rollen thead th {
+  text-align: center;
+}
+
+.handleiding .rollen thead th {
+  font-size: 14px;
+}
+
+.vragen dt {
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.vragen dd {
+  margin: 4px 0 0;
+}
+
+.handleiding .terug {
+  margin-top: 48px;
+}
+
+@media (max-width: 559px) {
+  .handleiding tbody th {
+    white-space: normal;
+  }
+}
+
+/* Rollentabel past ook op een telefoon */
+@media (max-width: 559px) {
+  .handleiding .rollen {
+    font-size: 14px;
+  }
+  .handleiding .rollen th,
+  .handleiding .rollen td {
+    padding: 8px 6px;
+  }
+  .handleiding .rollen th[scope="row"] {
+    padding-left: 12px;
+  }
+  .handleiding .rollen thead th {
+    font-size: 11px;
   }
 }

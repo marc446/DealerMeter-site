@@ -6,11 +6,16 @@ Gewone HTML, CSS en JavaScript, zonder build; geschikt voor GitHub Pages.
 | Bestand | Inhoud |
 |---|---|
 | `index.html` | De pagina |
+| `handleiding.html` | Handleiding van de app voor gebruikers en beheerders |
 | `privacy.html` | Privacyverklaring (adres en KvK-nummer toevoegen zodra bekend) |
 | `style.css` | Huisstijl; alle kleuren als variabelen bovenaan |
 | `app.js` | Demo-formulier: controle en opslaan in Supabase |
 | `config.js` | Supabase-URL en publishable key voor het formulier |
+| `fonts/` | Inter en JetBrains Mono, op de site zelf (geen Google Fonts). Licentie: SIL OFL |
 | `supabase/demo_aanvragen.sql` | Tabel voor de aanvragen (alleen toevoegen, niet lezen) |
+
+De knoppen **Inloggen** linken naar `https://dealermeter-app.netlify.app/login`. Verandert het
+adres van de app (bijvoorbeeld een eigen domein), zoek en vervang dat adres dan in alle `.html`-bestanden.
 
 ## Live zetten
 1. Maak een nieuw, gratis Supabase-project (regio Frankfurt) en voer `supabase/demo_aanvragen.sql` uit.
