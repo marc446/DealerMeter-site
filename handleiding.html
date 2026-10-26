@@ -42,7 +42,7 @@
           <li><a href="#berekening">Hoe de winst wordt berekend</a></li>
           <li><a href="#overzichten">Week, maand en jaar</a></li>
           <li><a href="#garantiepot">Garantiepot</a></li>
-          <li><a href="#beheer">Doelen en collega's beheren</a></li>
+          <li><a href="#beheer">Instellingen en collega's beheren</a></li>
           <li><a href="#rollen">Wie mag wat</a></li>
           <li><a href="#problemen">Lukt iets niet?</a></li>
         </ol>
@@ -113,7 +113,8 @@
             verkoopprijs in. Bij een export-auto vul je ook de BPM-teruggave in.
           </li>
           <li>
-            <strong>Kosten:</strong> transport, werkplaats, Autotrust, Res. Garantie, poetsen en promotie. Alle
+            <strong>Kosten:</strong> de kostensoorten van je bedrijf, bijvoorbeeld transport, werkplaats, garantie en
+            poetsen. Vaste bedragen staan er soms al in (het standaardbedrag); die kun je aanpassen of leegmaken. Alle
             kostenvelden zijn optioneel; een leeg veld telt als € 0.
           </li>
           <li>
@@ -203,8 +204,8 @@
       <section id="garantiepot">
         <h2>5. Garantiepot</h2>
         <p>
-          Het bedrag dat je bij een verkoop invult bij <strong>Res. Garantie</strong>, gaat automatisch als storting
-          in de garantiepot. Onder <strong>Pot</strong> zie je het saldo van vandaag en alle stortingen en
+          Het bedrag dat je bij een verkoop invult bij de garantiesoort (bijvoorbeeld <strong>Res. Garantie</strong>
+          of <strong>Garantie</strong>), gaat automatisch als storting in de garantiepot. Onder <strong>Pot</strong> zie je het saldo van vandaag en alle stortingen en
           uitkeringen per jaar. Tik op een storting om de bijbehorende verkoop te openen.
         </p>
 
@@ -222,11 +223,18 @@
           <strong>startdatum</strong> de eerste dag die nog níet in dat bedrag zit (meestal morgen). Stortingen en
           uitkeringen vanaf die dag tellen mee.
         </p>
+
+        <h3>Garantiepot aan- of uitzetten <span class="rol-label">Beheerder</span></h3>
+        <p>
+          Gebruikt je bedrijf geen garantiepot? Tik in <strong>Meer → Instellingen</strong> bij Garantiepot op
+          <strong>Garantiepot uitzetten</strong>. Het tabblad Pot en het garantieveld verdwijnen dan. Het saldo en alle
+          stortingen en uitkeringen blijven bewaard; zet je hem weer aan, dan staat alles er nog.
+        </p>
       </section>
 
       <!-- 6 -->
       <section id="beheer">
-        <h2>6. Doelen en collega's beheren <span class="rol-label">Beheerder</span></h2>
+        <h2>6. Instellingen en collega's beheren <span class="rol-label">Beheerder</span></h2>
         <p>Dit deel is voor eigenaars en beheerders. Medewerkers zien deze schermen niet.</p>
 
         <h3>Week- en maanddoel instellen</h3>
@@ -240,6 +248,26 @@
           toen gold, dus je oude resultaten veranderen niet. Onder <strong>Geschiedenis</strong> zie je eerdere doelen
           en kun je een doel verwijderen.
         </p>
+
+        <h3>Kostensoorten en betaalmethodes</h3>
+        <p>
+          Welke kostenvelden en betaalmethodes in het verkoopformulier staan, bepaal je zelf onder
+          <strong>Meer → Instellingen</strong>.
+        </p>
+        <ul>
+          <li><strong>Toevoegen:</strong> tik op <strong>+ Nieuwe kostensoort</strong> of <strong>+ Nieuwe betaalmethode</strong>.</li>
+          <li>
+            <strong>Hernoemen of standaardbedrag:</strong> tik op <strong>Wijzigen</strong> bij een soort. Een
+            standaardbedrag (bijvoorbeeld poetsen altijd € 50) staat bij elke nieuwe verkoop alvast ingevuld. Een
+            nieuwe naam zie je ook bij oude verkopen terug.
+          </li>
+          <li><strong>Volgorde:</strong> met de pijltjes zet je een soort hoger of lager in het formulier.</li>
+          <li>
+            <strong>Uitzetten:</strong> een soort die je niet meer gebruikt, zet je uit. Hij verdwijnt uit het formulier,
+            maar oude verkopen, de overzichten en de Excel-export houden hun bedragen en keuzes. Verwijderen kan daarom
+            niet; weer aanzetten wel.
+          </li>
+        </ul>
 
         <h3>Een collega toevoegen</h3>
         <ol class="stappenlijst">
@@ -275,6 +303,7 @@
               <tr><th scope="row">Excel-export</th><td>✓</td><td>✓</td><td>✓</td></tr>
               <tr><th scope="row">Uitkeringen garantiepot en beginsaldo</th><td>–</td><td>✓</td><td>✓</td></tr>
               <tr><th scope="row">Week- en maanddoel instellen</th><td>–</td><td>✓</td><td>✓</td></tr>
+              <tr><th scope="row">Kostensoorten, betaalmethodes en garantiepot aan/uit</th><td>–</td><td>✓</td><td>✓</td></tr>
               <tr><th scope="row">Collega's toevoegen, rollen wijzigen, verwijderen</th><td>–</td><td>✓</td><td>✓</td></tr>
               <tr><th scope="row">Eigenaars toevoegen of verwijderen</th><td>–</td><td>–</td><td>✓</td></tr>
             </tbody>
