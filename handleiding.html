@@ -109,10 +109,12 @@
             daarna het aantal dagen in dat de auto op voorraad stond.
           </li>
           <li>
-            <strong>Verkoop:</strong> kies <strong>Marge</strong> of <strong>BTW</strong>. Kies eventueel hoe er is
-            betaald; meerdere betaalmethodes tegelijk mag, bijvoorbeeld contant plus inruil. Kies je
-            <strong>Inruil</strong>, vul dan de inruilauto in (zie <a href="#inruil">Inruilauto's</a>). Vul de
-            inkoopprijs en verkoopprijs in. Bij een export-auto vul je ook de BPM-teruggave in.
+            <strong>Verkoop:</strong> kies <strong>Marge</strong> of <strong>BTW</strong>, en bij
+            <strong>Verkocht aan</strong> de soort klant: <strong>Particulier</strong>, <strong>B2B</strong>,
+            <strong>Export</strong> of <strong>Overig</strong> (verplicht). Is er een auto ingeruild, kies dan bij
+            <strong>Auto ingeruild?</strong> voor <strong>Ja</strong> en vul de inruilauto in (zie
+            <a href="#inruil">Inruilauto's</a>). Gebruikt je bedrijf meer betaalmethodes, dan kies je die hier; Inruil
+            is daar één van. Vul de inkoopprijs en verkoopprijs in. Bij een export-auto vul je ook de BPM-teruggave in.
           </li>
           <li>
             <strong>Kosten:</strong> de kostensoorten van je bedrijf, bijvoorbeeld transport, werkplaats, garantie en
@@ -193,7 +195,9 @@
         <p>
           Het jaaroverzicht toont de jaartotalen en het saldo van de garantiepot, hoeveel week- en maanddoelen er zijn
           gehaald, grafieken van de bruto winst per week en cumulatief, de top modellen, de kosten per soort en de
-          verdeling over BTW/marge en betaalmethodes.
+          verdeling over soort klant, betaalmethodes en BTW/marge. Oudere verkopen zonder soort klant staan daar als
+          <strong>Onbekend</strong>; open zo'n verkoop en kies de soort klant om hem aan te vullen. De soort klant staat
+          ook in de verkooplijst en als kolom in de Excel-export.
         </p>
         <p>
           Met <strong>Exporteer … naar Excel</strong> download je het hele jaar: een tabblad met alle verkopen inclusief
@@ -213,7 +217,7 @@
 
         <h3>Een inruilauto vastleggen</h3>
         <ol class="stappenlijst">
-          <li>Kies bij de verkoop de betaalmethode <strong>Inruil</strong>. Er verschijnt een blok Inruilauto's.</li>
+          <li>Kies bij de verkoop bij <strong>Auto ingeruild?</strong> voor <strong>Ja</strong> (of vink de betaalmethode <strong>Inruil</strong> aan). Er verschijnt een blok Inruilauto's.</li>
           <li>
             Vul het <strong>kenteken</strong> in (verplicht). Merk, model, bouwjaar, kleur en brandstof worden bij de
             RDW opgehaald. Kent de RDW het kenteken niet, vul dan merk en model zelf in.
@@ -243,7 +247,7 @@
           inruilauto ook bij de verkoop). Iedereen van het bedrijf mag dat doen.
         </p>
         <p class="tip">
-          Vink je bij een verkoop Inruil uit, dan worden de inruilauto's van die verkoop bij opslaan verwijderd. Je
+          Zet je bij een verkoop inruil weer uit (Nee), dan worden de inruilauto's van die verkoop bij opslaan verwijderd. Je
           krijgt daar eerst een waarschuwing voor.
         </p>
       </section>
@@ -314,6 +318,10 @@
             <strong>Uitzetten:</strong> een soort die je niet meer gebruikt, zet je uit. Hij verdwijnt uit het formulier,
             maar oude verkopen, de overzichten en de Excel-export houden hun bedragen en keuzes. Verwijderen kan daarom
             niet; weer aanzetten wel.
+          </li>
+          <li>
+            <strong>Alleen Inruil aan:</strong> staan alle betaalmethodes behalve Inruil uit, dan vraagt het formulier
+            alleen nog <strong>Auto ingeruild?</strong> (Ja/Nee).
           </li>
         </ul>
 
