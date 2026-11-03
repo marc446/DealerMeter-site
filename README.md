@@ -14,7 +14,7 @@ Gewone HTML, CSS en JavaScript, zonder build; geschikt voor GitHub Pages.
 | `fonts/` | Inter en JetBrains Mono, op de site zelf (geen Google Fonts). Licentie: SIL OFL |
 | `supabase/demo_aanvragen.sql` | Tabel voor de aanvragen (alleen toevoegen, niet lezen) |
 
-De knoppen **Inloggen** linken naar `https://dealermeter-app.netlify.app/login`. Verandert het
+De knoppen **Inloggen** linken naar `https://app.dealermeter.nl/login`. Verandert het
 adres van de app (bijvoorbeeld een eigen domein), zoek en vervang dat adres dan in alle `.html`-bestanden.
 
 ## Live zetten
@@ -22,6 +22,7 @@ adres van de app (bijvoorbeeld een eigen domein), zoek en vervang dat adres dan 
 2. Vul in `config.js` de Project URL en de publishable key in.
 3. Vul in `privacy.html` adres en KvK-nummer aan zodra die er zijn.
 4. GitHub → repository → Settings → Pages → Source: *Deploy from a branch*, branch `main`, map `/ (root)`.
+5. Eigen domein: het bestand `CNAME` bevat `dealermeter.nl`; bij de registrar (TransIP) staan de A-records van GitHub Pages op het hoofddomein en een CNAME `www` → `marc446.github.io`.
 
 Aanvragen bekijk je in Supabase onder **Table Editor → demo_aanvragen**.
 
