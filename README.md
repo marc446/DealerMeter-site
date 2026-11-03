@@ -1,7 +1,7 @@
 # DealerMeter – website
 
 Landingspagina om de markt voor DealerMeter te testen. Bezoekers kunnen een demo aanvragen.
-Gewone HTML, CSS en JavaScript, zonder build; geschikt voor GitHub Pages.
+Gewone HTML, CSS en JavaScript, zonder build. Gehost op Vercel (dealermeter.nl); `vercel.json` zet de beveiligingskoppen.
 
 | Bestand | Inhoud |
 |---|---|
@@ -21,8 +21,8 @@ adres van de app (bijvoorbeeld een eigen domein), zoek en vervang dat adres dan 
 1. Maak een nieuw, gratis Supabase-project (regio Frankfurt) en voer `supabase/demo_aanvragen.sql` uit.
 2. Vul in `config.js` de Project URL en de publishable key in.
 3. Vul in `privacy.html` adres en KvK-nummer aan zodra die er zijn.
-4. GitHub → repository → Settings → Pages → Source: *Deploy from a branch*, branch `main`, map `/ (root)`.
-5. Eigen domein: het bestand `CNAME` bevat `dealermeter.nl`; bij de registrar (TransIP) staan de A-records van GitHub Pages op het hoofddomein en een CNAME `www` → `marc446.github.io`.
+4. Vercel → Add New → Project → deze repository; Framework Preset *Other*, geen build command, output = de hoofdmap.
+5. Vercel → Settings → Domains: `dealermeter.nl` (en `www.dealermeter.nl` doorsturen naar `dealermeter.nl`); DNS-records zoals Vercel ze aangeeft bij TransIP.
 
 Aanvragen bekijk je in Supabase onder **Table Editor → demo_aanvragen**.
 
